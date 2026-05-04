@@ -57,7 +57,7 @@ if [ -s /etc/systemd/system/splashscreen-shutdown.service ]; then
 fi
 
 # Create a needed xorg dependency for VC4 (Raspberry)
-# https://github.com/ojaksch/MiSTer_tty2rpi/blob/main/1-Setup-Raspberry_Pi.md#bugs-and-things-still-to-do
+# https://github.com/m0vse/MiSTer_tty2rpi/blob/main/1-Setup-Raspberry_Pi.md#bugs-and-things-still-to-do
 . /usr/local/bin/showrpimodel > /dev/null 2>&1
 if [ -n "${RPIMODEL}" ] && ! [ -a /etc/X11/xorg.conf.d/99-vc4.conf ]; then
 sudo bash -c 'echo "Section \"OutputClass\"
