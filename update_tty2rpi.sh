@@ -6,8 +6,8 @@ if [ "${SUDO_USER:-${USER}}" = "root" ]; then
   exit 255
 fi
 
-REPOSITORY_URL="https://raw.githubusercontent.com/ojaksch/MiSTer_tty2rpi/main"
-REPOSITORY_URL2="https://www.tty2tft.de/MiSTer_tty2rpi"
+REPOSITORY_URL="https://raw.githubusercontent.com/m0vse/MiSTer_tty2rpi/main"
+REPOSITORY_URL2=""
 NODEBUG="-q -o /dev/null"
 [ -e ~/tty2rpi.ini ] && . ~/tty2rpi.ini
 [ -e ~/tty2rpi-user.ini ] && . ~/tty2rpi-user.ini
